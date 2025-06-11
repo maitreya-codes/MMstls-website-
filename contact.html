@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMSTLS – Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.svg" alt="MMSTLS Logo" /><span>MMSTLS</span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="content-section">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Address:</strong><br>218, Maitri Apartment, Plot No. 28,<br>I.P. Extension, Patparganj,<br>Delhi – 110092</p>
+        <p><strong>Phone:</strong> +91‑987‑369‑4613</p>
+        <p><strong>Email:</strong><a href="mailto:praveen@mmstls.in"> praveen@mmstls.in</a> | <a href="mailto:info@mmstls.in">info@mmstls.in</a></p>
+      </div>
+      <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        <input type="hidden" name="form-name" value="contact">
+        <label><span>Name</span><input type="text" name="name" required></label>
+        <label><span>Email</span><input type="email" name="email" required></label>
+        <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MMSTLS • All Rights Reserved</p>
+  </footer>
+</body>
+</html>
