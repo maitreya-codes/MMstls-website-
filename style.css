@@ -1,0 +1,97 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.logo img {
+  width: 32px;
+  margin-right: 8px;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+}
+
+.hero {
+  background: url('images/ship-background.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #f59e0b;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.features {
+  background-color: #f9fafb;
+  padding: 4rem 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.feature-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  background-color: #111827;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
