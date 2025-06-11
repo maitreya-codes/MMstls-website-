@@ -7,38 +7,61 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navigation -->
   <nav class="navbar">
-    <div class="logo">
-      <img src="images/logo.svg" alt="MMSTLS Logo" /><span>MMSTLS</span>
-    </div>
+    <img src="images/logo.png" alt="MMSTLS Logo" class="logo" />
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
     </ul>
   </nav>
 
+  <!-- Contact Section -->
   <main class="content-section">
-    <h2>Contact Us</h2>
-    <div class="contact-container">
+    <h2>Get in Touch with Us</h2>
+
+    <div class="contact-grid">
       <div class="contact-info">
-        <p><strong>Address:</strong><br>218, Maitri Apartment, Plot No. 28,<br>I.P. Extension, Patparganj,<br>Delhi – 110092</p>
-        <p><strong>Phone:</strong> +91‑987‑369‑4613</p>
-        <p><strong>Email:</strong><a href="mailto:praveen@mmstls.in"> praveen@mmstls.in</a> | <a href="mailto:info@mmstls.in">info@mmstls.in</a></p>
+        <p><strong>Mr. Praveen Kumar</strong><br>
+           Mobile: +91‑987‑369‑4613<br>
+           Email: <a href="mailto:praveen@mmstls.in">praveen@mmstls.in</a> | <a href="mailto:info@mmstls.in">info@mmstls.in</a><br>
+           Tel: +91‑1‑2224‑3349
+        </p>
+        <p><strong>Correspondence Office:</strong><br>
+           218, Maitri Apartment,<br>
+           Plot No: 28, I.P. Extension,<br>
+           Patparganj, Delhi – 110092
+        </p>
       </div>
-      <form name="contact" method="POST" data-netlify="true" class="contact-form">
-        <input type="hidden" name="form-name" value="contact">
-        <label><span>Name</span><input type="text" name="name" required></label>
-        <label><span>Email</span><input type="email" name="email" required></label>
-        <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
-        <button type="submit">Send Message</button>
-      </form>
+
+      <div class="newsletter-form">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form name="newsletter" netlify>
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
+
+    <hr>
+
+    <h3>Send Us a Message</h3>
+    <form name="contact" method="POST" data-netlify="true" class="full-contact-form">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p>Subscribe or send us a message—our team is available 24/7 to support your logistics needs.</p>
   </main>
 
-  <footer>
-    <p>&copy; 2025 MMSTLS • All Rights Reserved</p>
+  <!-- Footer -->
+  <footer class="footer dark">
+    <p>&copy; 2025 MMSTLS. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
